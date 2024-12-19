@@ -45,6 +45,7 @@ SCENARIO: Fracasso no cadastro por campos obrigatórios não preenchidos
 
 SCENARIO: Fracasso no cadastro por duplicação de ID única.
     GIVEN eu estou na página de "Cadastro de usuário";
+    AND usuário com "CPF" igual há "456.123.789-10" existe.
     WHEN eu preencho o campo "Nome" com "Carlos Mendes"
     AND "CPF" com "456.123.789-10"
     AND "Email" com "carlos.mendes@example.com"

@@ -14,6 +14,7 @@ SCENARIO: Sucesso no login
 
 SCENARIO: Fracasso no login
     GIVEN eu estou na página de "Login";
+    AND existe usuário "demostenes@example.com" com senha "SenhaCorreta123"
     WHEN eu preencho o campo "Email" com "demostenes@example.com"
     AND o campo "Senha" com "SenhaIncorreta123";
     AND clico em "Entrar";
